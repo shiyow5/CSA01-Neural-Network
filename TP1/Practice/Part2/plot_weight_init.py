@@ -20,17 +20,21 @@ fig, axes = plt.subplots(2, 2, figsize=(12, 10))
 ax = axes[0][0]
 detail_ranges = [0.01, 0.1, 0.5, 2.0, 5.0]
 colors = ['#2ecc71', '#3498db', '#e67e22', '#e74c3c', '#9b59b6']
+styles = ['o-', 's--', '^:', 'd-.', 'v-']
 for i, r in enumerate(detail_ranges):
     try:
         ep, err = read_csv(f'winit_delta_{r:.2f}.csv')
-        ax.plot(ep, err, color=colors[i], linewidth=1.2, label=f'range=[-{r}, {r}]')
+        ax.plot(ep, err, styles[i], color=colors[i], linewidth=1.3,
+                markersize=3, markevery=max(1, len(ep)//20),
+                alpha=0.8, label=f'range=[-{r}, {r}]')
     except FileNotFoundError:
         pass
 ax.set_title('Delta: Error Curves by Init Range')
-ax.set_xlabel('Epoch')
+ax.set_xlabel('Epoch (log scale)')
 ax.set_ylabel('Total Error')
+ax.set_xscale('log')
 ax.legend(fontsize=9)
-ax.grid(True, alpha=0.3)
+ax.grid(True, alpha=0.3, which='both')
 
 # --- Plot 2: Same but zoomed to first 50 epochs ---
 ax = axes[0][1]
@@ -39,7 +43,9 @@ for i, r in enumerate(detail_ranges):
         ep, err = read_csv(f'winit_delta_{r:.2f}.csv')
         ep_z = [e for e in ep if e <= 50]
         err_z = err[:len(ep_z)]
-        ax.plot(ep_z, err_z, color=colors[i], linewidth=1.2, label=f'range=[-{r}, {r}]')
+        ax.plot(ep_z, err_z, styles[i], color=colors[i], linewidth=1.3,
+                markersize=4, markevery=max(1, len(ep_z)//20),
+                alpha=0.8, label=f'range=[-{r}, {r}]')
     except FileNotFoundError:
         pass
 ax.set_title('Delta: Error Curves (First 50 Epochs)')

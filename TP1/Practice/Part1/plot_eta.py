@@ -22,10 +22,12 @@ colors_d = ['#3498db', '#9b59b6', '#1abc9c', '#34495e']
 
 # --- Plot 1: Perceptron error curves ---
 ax = axes[0][0]
+styles_p = ['o-', 's--', '^:', 'd-.']
 for i, eta in enumerate(etas):
     try:
         ep, err = read_csv(f'eta_perceptron_{eta:.2f}.csv')
-        ax.plot(ep, err, color=colors_p[i], linewidth=1.2, label=f'eta={eta}')
+        ax.plot(ep, err, styles_p[i], color=colors_p[i], linewidth=1.5,
+                markersize=5, alpha=0.75, label=f'eta={eta}')
     except FileNotFoundError:
         pass
 ax.set_title('Perceptron: Error Curves by Learning Rate')

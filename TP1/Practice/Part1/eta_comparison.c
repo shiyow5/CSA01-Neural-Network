@@ -144,13 +144,13 @@ int main()
         sprintf(filename, "eta_perceptron_%.2f.csv", detail_etas[e]);
         fp = fopen(filename, "w");
         fprintf(fp, "epoch,error\n");
-        run_perceptron(detail_etas[e], 42, fp);
+        run_perceptron(detail_etas[e], 4, fp);
         fclose(fp);
 
         sprintf(filename, "eta_delta_%.2f.csv", detail_etas[e]);
         fp = fopen(filename, "w");
         fprintf(fp, "epoch,error\n");
-        run_delta(detail_etas[e], 42, fp);
+        run_delta(detail_etas[e], 4, fp);
         fclose(fp);
     }
 
