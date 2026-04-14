@@ -1,6 +1,6 @@
 # CSA01 - Team Project 1, Part 1: Single Neuron Learning
 
-**Course:** Neural Networks (CSA01)
+**Course:** Neural Networks (CSA01)  
 **Team Members:**
 - SATO Sho (m5301059)
 - USAMI Yuki (m5301073)
