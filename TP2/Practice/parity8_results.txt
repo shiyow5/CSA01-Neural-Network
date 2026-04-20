@@ -1,0 +1,52 @@
+=============================================
+  BP 8-bit Parity Check Experiment Results
+=============================================
+eta = 0.5, lambda = 1.0, desired_error = 0.01
+Trials per config: 5
+Max epochs: 100000
+
+---------------------------------------------
+Hidden neurons: 8 (J=9 including bias)
+---------------------------------------------
+  Trial 1: epochs=100000, error=10.305549, correct=227/256, status=NOT_CONVERGED
+  Trial 2: epochs=100000, error=10.300392, correct=227/256, status=NOT_CONVERGED
+  Trial 3: epochs=100000, error=10.180095, correct=227/256, status=NOT_CONVERGED
+  Trial 4: epochs=100000, error=10.310299, correct=227/256, status=NOT_CONVERGED
+  Trial 5: epochs=100000, error=10.180479, correct=227/256, status=NOT_CONVERGED
+
+Summary: converged=0/5 (none converged within 100000 epochs)
+
+---------------------------------------------
+Hidden neurons: 16 (J=17 including bias)
+---------------------------------------------
+  Trial 1: epochs=100000, error=10.179772, correct=227/256, status=NOT_CONVERGED
+  Trial 2: epochs=100000, error=10.126514, correct=227/256, status=NOT_CONVERGED
+  Trial 3: epochs=100000, error=10.180240, correct=227/256, status=NOT_CONVERGED
+  Trial 4: epochs=100000, error=10.179908, correct=227/256, status=NOT_CONVERGED
+  Trial 5: epochs=100000, error=10.180235, correct=227/256, status=NOT_CONVERGED
+
+Summary: converged=0/5 (none converged within 100000 epochs)
+
+---------------------------------------------
+Hidden neurons: 24 (J=25 including bias)
+---------------------------------------------
+  Trial 1: epochs=100000, error=10.180072, correct=227/256, status=NOT_CONVERGED
+  Trial 2: epochs=100000, error=10.180116, correct=227/256, status=NOT_CONVERGED
+  Trial 3: epochs=100000, error=3.407519, correct=248/256, status=NOT_CONVERGED
+  Trial 4: epochs=100000, error=10.179676, correct=227/256, status=NOT_CONVERGED
+  Trial 5: epochs=100000, error=10.180335, correct=227/256, status=NOT_CONVERGED
+
+Summary: converged=0/5 (none converged within 100000 epochs)
+
+---------------------------------------------
+Hidden neurons: 32 (J=33 including bias)
+---------------------------------------------
+  Trial 1: epochs=100000, error=3.291327, correct=248/256, status=NOT_CONVERGED
+  Trial 2: epochs=100000, error=10.174535, correct=227/256, status=NOT_CONVERGED
+  Trial 3: epochs=100000, error=3.283647, correct=248/256, status=NOT_CONVERGED
+  Trial 4: epochs=100000, error=10.180130, correct=227/256, status=NOT_CONVERGED
+  Trial 5: epochs=100000, error=3.269377, correct=248/256, status=NOT_CONVERGED
+
+Summary: converged=0/5 (none converged within 100000 epochs)
+
+=============================================

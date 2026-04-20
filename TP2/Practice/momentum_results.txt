@@ -1,0 +1,89 @@
+=============================================
+  Momentum Experiment on 4-bit Parity
+=============================================
+eta = 0.5, lambda = 1.0, desired_error = 0.001
+Hidden neurons: 4 (J=5)
+Trials per config: 10
+Max epochs: 50000
+
+---------------------------------------------
+Momentum alpha=0
+---------------------------------------------
+  Trial 1: epochs=28485, error=0.001000, correct=16/16, status=CONVERGED
+  Trial 2: epochs=36253, error=0.001000, correct=16/16, status=CONVERGED
+  Trial 3: epochs=50000, error=0.001103, correct=16/16, status=NOT_CONVERGED
+  Trial 4: epochs=50000, error=0.405502, correct=15/16, status=NOT_CONVERGED
+  Trial 5: epochs=33833, error=0.001000, correct=16/16, status=CONVERGED
+  Trial 6: epochs=29798, error=0.001000, correct=16/16, status=CONVERGED
+  Trial 7: epochs=29057, error=0.001000, correct=16/16, status=CONVERGED
+  Trial 8: epochs=50000, error=0.405489, correct=15/16, status=NOT_CONVERGED
+  Trial 9: epochs=31241, error=0.001000, correct=16/16, status=CONVERGED
+  Trial 10: epochs=50000, error=0.405479, correct=15/16, status=NOT_CONVERGED
+
+Summary: converged=6/10, avg=31444, min=28485, max=36253
+
+---------------------------------------------
+Momentum alpha=.3
+---------------------------------------------
+  Trial 1: epochs=42066, error=0.001000, correct=16/16, status=CONVERGED
+  Trial 2: epochs=29106, error=0.001000, correct=16/16, status=CONVERGED
+  Trial 3: epochs=24622, error=0.001000, correct=16/16, status=CONVERGED
+  Trial 4: epochs=22939, error=0.001000, correct=16/16, status=CONVERGED
+  Trial 5: epochs=24045, error=0.001000, correct=16/16, status=CONVERGED
+  Trial 6: epochs=27306, error=0.001000, correct=16/16, status=CONVERGED
+  Trial 7: epochs=27632, error=0.001000, correct=16/16, status=CONVERGED
+  Trial 8: epochs=50000, error=0.406552, correct=15/16, status=NOT_CONVERGED
+  Trial 9: epochs=25837, error=0.001000, correct=16/16, status=CONVERGED
+  Trial 10: epochs=50000, error=0.406460, correct=15/16, status=NOT_CONVERGED
+
+Summary: converged=8/10, avg=27944, min=22939, max=42066
+
+---------------------------------------------
+Momentum alpha=.5
+---------------------------------------------
+  Trial 1: epochs=13949, error=0.001000, correct=16/16, status=CONVERGED
+  Trial 2: epochs=26174, error=0.001000, correct=16/16, status=CONVERGED
+  Trial 3: epochs=18185, error=0.001000, correct=16/16, status=CONVERGED
+  Trial 4: epochs=16775, error=0.001000, correct=16/16, status=CONVERGED
+  Trial 5: epochs=17128, error=0.001000, correct=16/16, status=CONVERGED
+  Trial 6: epochs=16162, error=0.001000, correct=16/16, status=CONVERGED
+  Trial 7: epochs=15653, error=0.001000, correct=16/16, status=CONVERGED
+  Trial 8: epochs=50000, error=0.407712, correct=15/16, status=NOT_CONVERGED
+  Trial 9: epochs=18230, error=0.001000, correct=16/16, status=CONVERGED
+  Trial 10: epochs=33499, error=0.001000, correct=16/16, status=CONVERGED
+
+Summary: converged=9/10, avg=19528, min=13949, max=33499
+
+---------------------------------------------
+Momentum alpha=.7
+---------------------------------------------
+  Trial 1: epochs=7910, error=0.001000, correct=16/16, status=CONVERGED
+  Trial 2: epochs=10415, error=0.001000, correct=16/16, status=CONVERGED
+  Trial 3: epochs=10743, error=0.001000, correct=16/16, status=CONVERGED
+  Trial 4: epochs=12148, error=0.001000, correct=16/16, status=CONVERGED
+  Trial 5: epochs=9335, error=0.001000, correct=16/16, status=CONVERGED
+  Trial 6: epochs=10643, error=0.001000, correct=16/16, status=CONVERGED
+  Trial 7: epochs=9089, error=0.001000, correct=16/16, status=CONVERGED
+  Trial 8: epochs=50000, error=0.002313, correct=16/16, status=NOT_CONVERGED
+  Trial 9: epochs=11075, error=0.001000, correct=16/16, status=CONVERGED
+  Trial 10: epochs=12956, error=0.000999, correct=16/16, status=CONVERGED
+
+Summary: converged=9/10, avg=10479, min=7910, max=12956
+
+---------------------------------------------
+Momentum alpha=.9
+---------------------------------------------
+  Trial 1: epochs=50000, error=0.500009, correct=15/16, status=NOT_CONVERGED
+  Trial 2: epochs=3678, error=0.000999, correct=16/16, status=CONVERGED
+  Trial 3: epochs=5863, error=0.000999, correct=16/16, status=CONVERGED
+  Trial 4: epochs=50000, error=2.411165, correct=11/16, status=NOT_CONVERGED
+  Trial 5: epochs=6432, error=0.001000, correct=16/16, status=CONVERGED
+  Trial 6: epochs=5994, error=0.000999, correct=16/16, status=CONVERGED
+  Trial 7: epochs=12106, error=0.001000, correct=16/16, status=CONVERGED
+  Trial 8: epochs=50000, error=0.500011, correct=15/16, status=NOT_CONVERGED
+  Trial 9: epochs=6041, error=0.000999, correct=16/16, status=CONVERGED
+  Trial 10: epochs=25289, error=0.001000, correct=16/16, status=CONVERGED
+
+Summary: converged=7/10, avg=9343, min=3678, max=25289
+
+=============================================

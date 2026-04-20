@@ -1,0 +1,72 @@
+=============================================
+  BP 4-bit Parity Check Experiment Results
+=============================================
+eta = 0.5, lambda = 1.0, desired_error = 0.001
+Trials per config: 10
+Max epochs: 50000
+
+---------------------------------------------
+Hidden neurons: 4 (J=5 including bias)
+---------------------------------------------
+  Trial 1: epochs=28485, error=0.001000, correct=16/16, status=CONVERGED
+  Trial 2: epochs=36253, error=0.001000, correct=16/16, status=CONVERGED
+  Trial 3: epochs=50000, error=0.001103, correct=16/16, status=NOT_CONVERGED
+  Trial 4: epochs=50000, error=0.405502, correct=15/16, status=NOT_CONVERGED
+  Trial 5: epochs=33833, error=0.001000, correct=16/16, status=CONVERGED
+  Trial 6: epochs=29798, error=0.001000, correct=16/16, status=CONVERGED
+  Trial 7: epochs=29057, error=0.001000, correct=16/16, status=CONVERGED
+  Trial 8: epochs=50000, error=0.405489, correct=15/16, status=NOT_CONVERGED
+  Trial 9: epochs=31241, error=0.001000, correct=16/16, status=CONVERGED
+  Trial 10: epochs=50000, error=0.405479, correct=15/16, status=NOT_CONVERGED
+
+Summary: converged=6/10, avg=31444, min=28485, max=36253
+
+---------------------------------------------
+Hidden neurons: 6 (J=7 including bias)
+---------------------------------------------
+  Trial 1: epochs=27670, error=0.001000, correct=16/16, status=CONVERGED
+  Trial 2: epochs=27990, error=0.001000, correct=16/16, status=CONVERGED
+  Trial 3: epochs=25419, error=0.001000, correct=16/16, status=CONVERGED
+  Trial 4: epochs=22939, error=0.001000, correct=16/16, status=CONVERGED
+  Trial 5: epochs=19333, error=0.001000, correct=16/16, status=CONVERGED
+  Trial 6: epochs=29636, error=0.001000, correct=16/16, status=CONVERGED
+  Trial 7: epochs=27116, error=0.001000, correct=16/16, status=CONVERGED
+  Trial 8: epochs=26550, error=0.001000, correct=16/16, status=CONVERGED
+  Trial 9: epochs=30514, error=0.001000, correct=16/16, status=CONVERGED
+  Trial 10: epochs=41905, error=0.001000, correct=16/16, status=CONVERGED
+
+Summary: converged=10/10, avg=27907, min=19333, max=41905
+
+---------------------------------------------
+Hidden neurons: 8 (J=9 including bias)
+---------------------------------------------
+  Trial 1: epochs=29409, error=0.001000, correct=16/16, status=CONVERGED
+  Trial 2: epochs=31567, error=0.001000, correct=16/16, status=CONVERGED
+  Trial 3: epochs=20438, error=0.001000, correct=16/16, status=CONVERGED
+  Trial 4: epochs=27166, error=0.001000, correct=16/16, status=CONVERGED
+  Trial 5: epochs=27425, error=0.001000, correct=16/16, status=CONVERGED
+  Trial 6: epochs=19287, error=0.001000, correct=16/16, status=CONVERGED
+  Trial 7: epochs=21813, error=0.001000, correct=16/16, status=CONVERGED
+  Trial 8: epochs=18938, error=0.001000, correct=16/16, status=CONVERGED
+  Trial 9: epochs=31350, error=0.001000, correct=16/16, status=CONVERGED
+  Trial 10: epochs=24369, error=0.001000, correct=16/16, status=CONVERGED
+
+Summary: converged=10/10, avg=25176, min=18938, max=31567
+
+---------------------------------------------
+Hidden neurons: 10 (J=11 including bias)
+---------------------------------------------
+  Trial 1: epochs=27574, error=0.001000, correct=16/16, status=CONVERGED
+  Trial 2: epochs=27354, error=0.001000, correct=16/16, status=CONVERGED
+  Trial 3: epochs=23664, error=0.001000, correct=16/16, status=CONVERGED
+  Trial 4: epochs=23385, error=0.001000, correct=16/16, status=CONVERGED
+  Trial 5: epochs=30265, error=0.001000, correct=16/16, status=CONVERGED
+  Trial 6: epochs=28572, error=0.001000, correct=16/16, status=CONVERGED
+  Trial 7: epochs=38744, error=0.001000, correct=16/16, status=CONVERGED
+  Trial 8: epochs=50000, error=0.405234, correct=15/16, status=NOT_CONVERGED
+  Trial 9: epochs=26482, error=0.001000, correct=16/16, status=CONVERGED
+  Trial 10: epochs=27554, error=0.001000, correct=16/16, status=CONVERGED
+
+Summary: converged=9/10, avg=28177, min=23385, max=38744
+
+=============================================
