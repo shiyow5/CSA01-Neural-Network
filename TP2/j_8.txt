@@ -1,0 +1,51 @@
+Error in the 1000-th learning cycle = 2.070817
+Error in the 2000-th learning cycle = 2.067134
+Error in the 3000-th learning cycle = 2.065368
+Error in the 4000-th learning cycle = 2.054934
+Error in the 5000-th learning cycle = 1.721433
+Error in the 6000-th learning cycle = 1.332867
+Error in the 7000-th learning cycle = 0.442489
+Error in the 8000-th learning cycle = 0.420744
+Error in the 9000-th learning cycle = 0.414852
+Error in the 10000-th learning cycle = 0.412122
+Error in the 11000-th learning cycle = 0.410549
+Error in the 12000-th learning cycle = 0.409526
+Error in the 13000-th learning cycle = 0.408806
+Error in the 14000-th learning cycle = 0.408272
+Error in the 15000-th learning cycle = 0.407859
+Error in the 16000-th learning cycle = 0.407528
+Error in the 17000-th learning cycle = 0.407255
+Error in the 18000-th learning cycle = 0.407026
+Error in the 19000-th learning cycle = 0.406827
+Error in the 20000-th learning cycle = 0.406649
+Error in the 21000-th learning cycle = 0.406484
+Error in the 22000-th learning cycle = 0.406320
+Error in the 23000-th learning cycle = 0.406134
+Error in the 24000-th learning cycle = 0.405847
+Error in the 25000-th learning cycle = 0.404757
+Error in the 26000-th learning cycle = 0.270781
+Error in the 27000-th learning cycle = 0.009035
+Error in the 28000-th learning cycle = 0.003761
+Error in the 29000-th learning cycle = 0.002335
+Error in the 30000-th learning cycle = 0.001688
+Error in the 31000-th learning cycle = 0.001323
+Error in the 32000-th learning cycle = 0.001090
+
+Finished at the 32514-th learning cycle with Error = 0.001000
+
+
+The connection weights in the output layer:
+-11.963698 -0.589898 12.712436 -0.365146 -0.432956 12.716511 -13.201866 -0.357949 -5.324386 
+
+
+The connection weights in the hidden layer:
+-3.151454 -3.150791 -3.149911 -3.149044 -10.874843 
+-1.843050 -1.963325 -1.788844 -1.833282 1.695332 
+-6.486001 -6.497501 -6.500411 -6.550157 -3.299910 
+-2.064844 -2.058828 -2.025046 -2.115378 1.476305 
+-2.217466 -2.200154 -2.262721 -2.171932 1.436425 
+-7.351772 -7.354177 -7.352715 -7.352691 -17.321797 
+-6.882625 -6.874235 -6.877716 -6.884262 -9.450467 
+-2.256134 -2.260467 -2.324631 -2.359942 1.320792 
+
+

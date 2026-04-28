@@ -1,0 +1,48 @@
+Error in the 1000-th learning cycle = 2.072464
+Error in the 2000-th learning cycle = 2.067984
+Error in the 3000-th learning cycle = 2.066287
+Error in the 4000-th learning cycle = 2.064749
+Error in the 5000-th learning cycle = 2.051031
+Error in the 6000-th learning cycle = 1.614295
+Error in the 7000-th learning cycle = 0.777922
+Error in the 8000-th learning cycle = 0.479061
+Error in the 9000-th learning cycle = 0.432756
+Error in the 10000-th learning cycle = 0.419056
+Error in the 11000-th learning cycle = 0.413848
+Error in the 12000-th learning cycle = 0.411307
+Error in the 13000-th learning cycle = 0.409825
+Error in the 14000-th learning cycle = 0.408846
+Error in the 15000-th learning cycle = 0.408135
+Error in the 16000-th learning cycle = 0.407569
+Error in the 17000-th learning cycle = 0.407069
+Error in the 18000-th learning cycle = 0.406550
+Error in the 19000-th learning cycle = 0.405818
+Error in the 20000-th learning cycle = 0.403002
+Error in the 21000-th learning cycle = 0.055155
+Error in the 22000-th learning cycle = 0.006618
+Error in the 23000-th learning cycle = 0.003277
+Error in the 24000-th learning cycle = 0.002155
+Error in the 25000-th learning cycle = 0.001599
+Error in the 26000-th learning cycle = 0.001270
+Error in the 27000-th learning cycle = 0.001053
+
+Finished at the 27310-th learning cycle with Error = 0.001000
+
+
+The connection weights in the output layer:
+-14.870530 -1.148147 12.870149 3.163797 -1.932461 -11.883198 -1.200266 2.748555 -1.127165 10.921101 -5.482932 
+
+
+The connection weights in the hidden layer:
+-7.166096 -7.182110 -7.184437 -7.162675 -9.409261 
+-1.438313 -1.602191 -1.486138 -1.462786 1.172194 
+-6.826011 -6.735596 -6.775961 -6.884049 -16.089283 
+-3.774822 -3.843523 -3.813114 -3.765413 -2.718398 
+-0.757398 -0.161174 -0.424960 -1.149349 0.132860 
+-3.126852 -3.170299 -3.152080 -3.081098 -10.830112 
+-1.455067 -1.812537 -1.701781 -1.850895 1.164438 
+-3.211761 -3.146730 -3.257618 -3.346997 -1.488375 
+-1.339364 -1.267316 -1.517558 -1.475135 1.123169 
+-6.454498 -6.469253 -6.458201 -6.532597 -2.627524 
+
+

@@ -1,0 +1,41 @@
+Error in the 1000-th learning cycle = 2.069148
+Error in the 2000-th learning cycle = 2.066279
+Error in the 3000-th learning cycle = 2.064583
+Error in the 4000-th learning cycle = 2.034774
+Error in the 5000-th learning cycle = 1.379772
+Error in the 6000-th learning cycle = 0.453151
+Error in the 7000-th learning cycle = 0.422314
+Error in the 8000-th learning cycle = 0.415403
+Error in the 9000-th learning cycle = 0.412367
+Error in the 10000-th learning cycle = 0.410655
+Error in the 11000-th learning cycle = 0.409547
+Error in the 12000-th learning cycle = 0.408759
+Error in the 13000-th learning cycle = 0.408151
+Error in the 14000-th learning cycle = 0.407634
+Error in the 15000-th learning cycle = 0.407109
+Error in the 16000-th learning cycle = 0.406184
+Error in the 17000-th learning cycle = 0.374042
+Error in the 18000-th learning cycle = 0.013113
+Error in the 19000-th learning cycle = 0.004526
+Error in the 20000-th learning cycle = 0.002690
+Error in the 21000-th learning cycle = 0.001918
+Error in the 22000-th learning cycle = 0.001497
+Error in the 23000-th learning cycle = 0.001232
+Error in the 24000-th learning cycle = 0.001049
+
+Finished at the 24339-th learning cycle with Error = 0.001000
+
+
+The connection weights in the output layer:
+-0.458420 -0.876304 12.687162 12.212680 -12.062519 -12.715471 -5.388823 
+
+
+The connection weights in the hidden layer:
+-1.666052 -1.551754 -1.686008 -1.811995 1.407152 
+-1.062069 -1.108368 -1.374730 -1.511933 1.509408 
+-6.863167 -6.862343 -6.863366 -6.864383 -16.306407 
+-6.270625 -6.273209 -6.285100 -6.341607 -3.130779 
+-3.190129 -3.189281 -3.187961 -3.186844 -11.029198 
+-6.693959 -6.690335 -6.690223 -6.693486 -9.164180 
+
+
