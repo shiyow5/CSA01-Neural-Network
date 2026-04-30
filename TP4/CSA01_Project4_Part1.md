@@ -15,7 +15,7 @@
 This project deals with **unsupervised competitive learning** using a Winner-Take-All (WTA) network, also known as a Kohonen network.
 
 The goal is to find a small set of representative weight vectors (prototypes) that cover the distribution of training patterns.
-Unlike supervised learning, no class labels are used during training — the network organizes itself based solely on the geometric structure of the input data.
+Unlike supervised learning, no class labels are used — the network picks up structure from the data on its own.
 
 We worked on two problems.
 
@@ -117,7 +117,7 @@ for (i = 0; i < I; i++) w[m][i] = x[rp][i];
 Random initialization in $[-0.5, 0.5]^4$ (then normalized) places weight vectors across the entire unit hypersphere.
 For Iris data (all-positive orthant), about half of those neurons start pointing in directions with negative components, giving them systematically lower inner products for all training samples.
 Even with the `s0` fix, one neuron tends to dominate early training and drives the others to dead states.
-Initializing from randomly sampled training patterns guarantees all neurons start inside the actual data distribution, giving each a fair chance to win from the beginning.
+Picking initial weights from training samples means every neuron starts somewhere inside the real data distribution, so none is at a systematic disadvantage from the first epoch.
 
 ---
 
@@ -152,7 +152,7 @@ All components reach their stable values by around epoch 5, with no visible chan
 
 ![Figure 2: Convergence of weight components over epochs](Practice/figures/fig2_base_convergence.png)
 
-The result is geometrically clean: the two neurons converge to the centroids of the two natural clusters on the unit circle, which is exactly what WTA learning is designed to do.
+The result is geometrically clean: both neurons land at the centroids of the two obvious clusters on the unit circle.
 
 ### Iris Experiment
 
@@ -183,7 +183,7 @@ Stars mark the cluster centroids in raw feature space.
 *Setosa* and *virginica* are both perfectly classified.
 The 10 misclassified samples are all from *versicolor*, which ended up assigned to the *virginica* cluster.
 This is visible in Figure 3 as green squares in the upper-right region.
-This is consistent with what is known about the Iris dataset: *setosa* is linearly separable from the other two species, while *versicolor* and *virginica* have overlapping petal distributions.
+*Setosa* is known to be linearly separable from the other two species, while *versicolor* and *virginica* have overlapping petal distributions — so this outcome is not surprising.
 
 Looking at the prototype components, neuron 0 (setosa) has a high sepal-to-petal ratio (large sepal width 0.546, tiny petal length 0.232 and petal width 0.034 relative to the total norm), which reflects setosa's characteristic of small petals relative to body size.
 Neurons 1 and 2 differ mainly in the petal component (0.496 vs 0.589), reflecting the gradual increase in petal size from versicolor to virginica.
@@ -200,12 +200,12 @@ An alternative is to use **Euclidean distance** as the winner criterion, which c
 
 The question we posed is: which criterion better separates the three Iris species?
 
-These two approaches encode different assumptions about the data:
+The two approaches differ in what they assume about the data:
 
 - **Cosine similarity WTA** — clusters samples by the *ratio* of features (e.g., petal length relative to sepal length). L2 normalization is mandatory.
 - **Euclidean distance WTA** — clusters samples by the *absolute* feature values. No normalization needed.
 
-For the Iris dataset, the three species differ not only in the ratio of features but also in the absolute scale (virginica has the largest petals, setosa the smallest), so it is not obvious a priori which criterion will cluster them more accurately.
+For the Iris dataset, the three species differ both in feature ratios and in absolute scale (virginica has the largest petals, setosa the smallest), so it is not clear in advance which criterion would give better clusters.
 
 ---
 
@@ -233,7 +233,7 @@ for (m = 0; m < M; m++) {
 }
 ```
 
-Note that the initialization strategy (random training samples) is kept the same, since it is a sound practice regardless of the winner criterion.
+The initialization (random training samples) is the same in both versions, since it works well regardless of which distance criterion is used.
 
 ---
 
@@ -291,8 +291,8 @@ After L2 normalization, the feature *ratios* become the discriminating signal ra
 Virginica tends to have proportionally larger petals relative to sepals compared to versicolor.
 This directional difference is more clearly captured in cosine space, allowing the cosine WTA to separate virginica perfectly.
 
-In short, the cosine similarity WTA implicitly performs a kind of *shape* comparison (feature ratios), while the Euclidean WTA performs a *size* comparison (absolute values).
-For the Iris dataset, where the key difference between versicolor and virginica lies in the *proportion* of petal size rather than overall body size, the cosine criterion is better suited and gives higher overall accuracy (93.3% vs 88.0%).
+Put simply, cosine WTA compares the *shape* of feature vectors (their ratios), while Euclidean WTA compares their *size* (absolute values).
+For the Iris dataset, the key difference between versicolor and virginica is in the *proportion* of petal size relative to the whole flower, not in overall body size, so the cosine criterion fits the data better and gives higher accuracy (93.3% vs 88.0%).
 
-This comparison highlights that the choice of similarity metric is not just a technical detail — it encodes an assumption about what kind of structure is meaningful in the data.
-For datasets where the relevant information is in the direction (ratio) of features rather than their absolute scale, L2 normalization combined with cosine similarity WTA is the more appropriate choice.
+What this comparison shows is that the choice of distance metric is not just an implementation detail — it reflects which aspect of the data we think matters.
+When the important signal lies in the shape of a feature vector (i.e., the ratio of its components) rather than its overall magnitude, normalizing inputs and using cosine similarity makes more sense than using raw Euclidean distance.
